@@ -978,6 +978,19 @@ section.jb-main-content .jb-under-construction-page .center-content p {
     max-height: 300px;
 }
 
+#jb-posts-section .jb-post-video {
+    height: 435px;
+    max-height: 435px;
+    text-align: center;
+    width: 100%;
+}
+
+#jb-posts-section .jb-post-video video {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
 #jb-posts-section .jb-post-title {
     text-align: center;
     padding: 15px;
@@ -1051,6 +1064,12 @@ section.jb-main-content .jb-under-construction-page .center-content p {
 	section.jb-main-content .jb-videos-container .jb-video-container .videos.posts-loop #videos-content {
 		margin-top: 0;
 	}
+}
+
+@media (min-width: 768px) {
+    .jb-header-navigation .jb-header-container .jb-navigation-list {
+        float: right;
+    }
 }
 
 @media (max-width: 767px) {

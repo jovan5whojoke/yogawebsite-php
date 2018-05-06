@@ -35,16 +35,27 @@
                     <div class="col-xs-12 jb-post-breadcrumbs">
                         <a style=>Home</a> / Post: <?php echo get_field('post_title'); ?>
                     </div>
-                    <div class="col-xs-12 col-md-12 jb-post-image">
+
                         <?php
-                            if (get_field('post_image')) {
-                                echo get_field('post_image');
+                            if (get_field('post_image') && !get_field('post_video')) {
+                            ?>
+                            <div class="col-xs-12 col-md-12 jb-post-image">
+                                <img src="<?php echo get_field('post_image'); ?>">
+                            </div>
+                        <?php
+
                             } else {
-                                get_field('post_video');
+                                ?>
+                            <div class="col-xs-12 col-md-12 jb-post-video">
+                                <video class="jb-video-iframe jb-hide" controls="">
+                                    <source src="<?php echo get_field('post_video'); ?>" type="video/mp4">
+                                </video>
+                            </div>
+                        <?php
                             }
                         ?>
-                        <img src="https://artyogaabundance.000webhostapp.com/wp-content/uploads/2018/05/mantra-yoga.jpg">
-                    </div>
+
+
                     <div class="col-xs-12 col-md-12 jb-post-title">
                         <h3><?php echo get_field('post_title'); ?></h3>
                     </div>
