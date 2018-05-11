@@ -105,6 +105,7 @@
                        <div class="jb-recent-posts">
                             <h3 class="jb-recent-posts-title"><span>Recent Comments</span></h3>
 
+
                             <ul id="jb-recent-posts-post">
                                 <li class="post">
                                     <i class="glyphicon glyphicon-th-large"></i>
