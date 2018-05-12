@@ -960,15 +960,26 @@ section.jb-main-content .jb-under-construction-page .center-content p {
     margin: 10px 0 20px 0;
     color: #54575a;
     font-size: 13px;
-    text-transform: uppercase;
+    font-style: italic;
+    padding: 0 30px;
 }
 
 #jb-posts-section .jb-post-breadcrumbs a {
     cursor: pointer;
 }
 
+#jb-posts-section .jb-post-breadcrumbs a.breadcrumbs-home {
+    color: #008391;
+}
+
+#jb-posts-section .jb-post-breadcrumbs a.post-title:hover {
+    color: #008391;
+}
+
 #jb-posts-section .jb-post-image {
     max-height: 300px;
+    margin: 0 0 30px 0;
+
 }
 
 #jb-posts-section .jb-post-image img {
@@ -983,32 +994,202 @@ section.jb-main-content .jb-under-construction-page .center-content p {
     max-height: 435px;
     text-align: center;
     width: 100%;
+    position: relative;
+    margin-bottom: 40px;
 }
 
 #jb-posts-section .jb-post-video video {
     display: block;
     height: 100%;
     width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#jb-posts-section .jb-post-video .jb-overlay {
+    background: #ccc;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
 }
 
 #jb-posts-section .jb-post-title {
     text-align: center;
     padding: 15px;
+    margin-bottom: 0;
 }
 
 #jb-posts-section .jb-post-title h3 {
-    text-transform: uppercase;
-    margin: 30px 0;
     font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 1.2;
-    color: #454545;
+    color: #008391;
+    text-align: left;
+    font-family: Sans;
+    font-size: 39px;
+    line-height: 52px;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
 }
 
 #jb-posts-section .jb-post-short-description {
-    text-align: center;
+    text-align: left;
+    margin-bottom: 50px;
+    padding-bottom: 15px;
 }
+
+#jb-posts-section .jb-post-short-description p {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+
+#jb-posts-section .jb-post-short-description p span:hover {
+    color: #008391;
+    cursor: pointer;
+}
+
+#jb-posts-section .jb-post-long-description {
+    font-size: 17px;
+    font-family: Sans;
+    margin-bottom: 30px;
+}
+
+#jb-posts-section  #respond {
+    padding-top: 15px;
+    position: relative;
+}
+
+#jb-posts-section  #respond #reply-title {
+    background: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+    letter-spacing: 0px;
+    font-size: 32px;
+    line-height: 42px;
+    font-style: normal;
+    text-transform: none;
+    font-family: Sans;
+    border-top: 1px solid #ddd;
+    padding-top: 30px;
+    margin-top: 0;
+}
+
+#jb-posts-section  #respond  form .comment-form-comment label {
+    display: block;
+    color: #7d7d7d;
+    font-weight: normal;
+}
+
+#jb-posts-section  #respond form .comment-form-comment textarea#comment {
+    width: 100% !important;
+    max-width: 100%;
+    border-color: #ccc;
+}
+
+#jb-posts-section  #respond form .comment-form-author label {
+    display: block;
+    color: #7d7d7d;
+    font-weight: normal;
+}
+
+#jb-posts-section  #respond form .comment-form-author input {
+    width: 50% !important;
+    max-width: 50%;
+    border: 1px solid #ccc;
+    height: 30px;
+}
+
+#jb-posts-section  #respond form .comment-form-email label {
+    display: block;
+    color: #7d7d7d;
+    font-weight: normal;
+}
+
+#jb-posts-section  #respond form .comment-form-email input {
+    width: 50% !important;
+    max-width: 50%;
+    border: 1px solid #ccc;
+    height: 30px;
+}
+
+#jb-posts-section  #respond form .form-submit  input {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 22px;
+    color: #fff !important;
+    background-color: #008391;
+    border: 1px solid #008391;
+    border-color: #008391 #008391 #008391 #008391;
+    border-radius: 4px;
+}
+
+#jb-posts-section #respond .jb-form-overlay {
+    display: none;
+}
+
+#jb-posts-section #respond:hover .jb-form-overlay {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #e0e0e0;
+    opacity: 0.7;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-weight: normal;
+    font-family: "Sans";
+}
+
+#jb-posts-section #respond:hover .jb-form-overlay p {
+    top: calc(50% - 30px);
+    left: calc(50% - 100px);
+    position: absolute;
+    color: black;
+}
+
+#jb-posts-section .jb-posts-right-column .jb-recent-posts {
+    padding: 15px;
+}
+
+#jb-posts-section .jb-posts-right-column .jb-recent-posts-title {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 16px;
+    color: #333;
+    font-family: "Sans";
+}
+
+#jb-posts-section .jb-posts-right-column .jb-recent-posts #jb-recent-posts-post {
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+}
+
+#jb-posts-section .jb-posts-right-column .jb-recent-posts li {
+    list-style: none;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+#jb-posts-section .jb-posts-right-column .jb-recent-posts li i {
+    margin-right: 10px;
+    font-size: 15px;
+    color: #008391;
+}
+
+#jb-posts-section .jb-posts-right-column .jb-recent-posts li:hover a {
+    color: #008391;
+}
+
+
 
 /* Responsive media queries */
 @media (min-width: 1025px) {
