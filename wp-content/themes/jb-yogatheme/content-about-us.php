@@ -14,12 +14,11 @@
                 <h1 class="text-mission">- Our Mission -</h1>
                 <p class="text-goal">Our mission text</p>
                 <div class="jb-about-us-image">
-                    <img srcset="https://d39afr5wio5j08.cloudfront.net/assets-p/about/eliran-sapir@2x-0c3319c1ea8468e6b0052625adf5742b010a9900347a3ba399725012e8eb89ba.jpg 2x"
+                    <img srcset="<?php echo get_bloginfo('template_directory'); ?>/resources/images/profile.jpg"
                          class="img-circle img-fluid m-x-auto m-b" style="width: 112px;"
-                         src="https://d39afr5wio5j08.cloudfront.net/assets-p/about/eliran-sapir-e310d7008a929a0862275db895ae08bb391f564f6ae23ecbf533fdd2a2d48cd5.jpg"
-                         alt="Eliran sapir">
-                    <h3 class="text-md text-bold">John Doe</h3>
-                    <p class="text-xxxs m-b-sm text-uppercase">Co-founder &amp; CEO</p>
+                         src="<?php echo get_bloginfo('template_directory'); ?>/resources/images/profile.jpg"
+                         alt="Andrijana Cikaric">
+                    <h3 class="text-md text-bold">Andrijana Cikaric</h3>
                 </div>
                 <h2 class="text-about">About</h2>
                 <div class="text-justify">
@@ -32,7 +31,8 @@
                         leo, rutrum quis nunc condimentum, porttitor facilisis orci. Praesent tempor sem non metus
                         laoreet rutrum eget vitae lorem. Mauris libero risus, dignissim sed dignissim ultrices,
                         rhoncus luctus ligula. Duis et aliquam nulla, et rhoncus lorem.
-
+                    </p>
+                    <p class="second">
                         Proin sit amet ornare urna. Sed nec nisi pellentesque, auctor diam sit amet, aliquam quam.
                         Mauris et consectetur justo, vitae elementum erat. Phasellus ut fringilla ligula. Praesent
                         semper, est ac consectetur commodo, quam odio semper libero, quis maximus tortor lorem ac
@@ -46,28 +46,27 @@
                         nostra, per inceptos himenaeos. Integer auctor ipsum sit amet diam condimentum, vel pulvinar
                         elit cursus.
                     </p>
-                    <p class="second">
-
-                    </p>
                 </div>
             </section>
             <section class="" id="about-locations">
                 <h2 class="jb-locations-text">Locations</h2>
                 <div class="row">
                     <div class="col-xs-12 col-sm-4">
-                        <p class="text-xs m-b-lg text-xxs-center text-sm-left">
-                            <span class="text-bold">Yoga website</span> is headquartered<br>in<span class="text-bold">Belgrade, SR</span>.
+                        <p class="locations-intro-text">
+                            <span class="text-bold">Yoga website</span> is headquartered<br>in<span class="text-bold"> Belgrade, SR</span>.
                         </p>
                         <div class="text-quiet">
-                            <address class="">
-                                <a id="boston-headquaters" href="#">
-                                    <i class="hicon-map-marker"></i>Belgrade (Headquaters)
-                                </a><br>Street<br>3rd Floor<br>City
+                            <address>
+                                <a class="city-headquaters">
+                                    <i class="glyphicon glyphicon-map-marker"></i> Belgrade (Headquaters)
+                                </a>
+                                <br>Street<br>3rd Floor<br>City
                             </address>
-                            <address class="">
-                                <a id="other-city-headquaters" href="#">
-                                    <i class="hicon-map-marker"></i>Belgrade (Headquaters)
-                                </a><br>Street<br>3rd Floor<br>City
+                            <address>
+                                <a class="city-headquaters">
+                                    <i class="glyphicon glyphicon-map-marker"></i> Other City (Headquaters)
+                                </a>
+                                <br>Street<br>3rd Floor<br>City
                             </address>
                         </div>
                     </div>

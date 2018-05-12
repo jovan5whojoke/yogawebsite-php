@@ -24,6 +24,8 @@
         <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/resources/css/styles.css">
         <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/resources/css/slider.css">
         <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/resources/css/banner.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
     </head>
     <body>
 
@@ -35,7 +37,7 @@
                     <div class="col-xs-12 jb-post-breadcrumbs">
                         <a class="breadcrumbs-home"><span class="glyphicon glyphicon-home"></span> Home</a> / <a class="post-title">Post: <?php echo get_field('post_title'); ?></a>
                     </div>
-                    <div class="jb-posts-left-column col-xs-9">
+                    <div class="jb-posts-left-column col-xs-12 col-sm-12 col-md-9">
                         <div class="col-xs-12 col-md-12 jb-post-title">
                             <h3><?php echo get_field('post_title'); ?></h3>
                         </div>
@@ -101,7 +103,7 @@
                         </div>
                     </div>
 
-                    <div class="jb-posts-right-column col-xs-3">
+                    <div class="jb-posts-right-column col-xs-12 col-sm-12 col-md-3">
                        <div class="jb-recent-posts">
                             <h3 class="jb-recent-posts-title"><span>Recent Comments</span></h3>
 

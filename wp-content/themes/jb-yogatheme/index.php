@@ -17,6 +17,8 @@
         <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/resources/css/styles.css">
         <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/resources/css/slider.css">
         <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/resources/css/banner.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
     </head>
     <body>
 

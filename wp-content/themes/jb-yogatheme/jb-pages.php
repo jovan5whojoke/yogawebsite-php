@@ -26,6 +26,8 @@ $post_slug = $post->post_name;
         <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/resources/css/styles.css">
         <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/resources/css/slider.css">
         <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/resources/css/banner.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
     </head>
     <body>
 
@@ -39,11 +41,11 @@ $post_slug = $post->post_name;
                 get_template_part( 'image-header' );
                 get_template_part( 'content-posts' );
             } elseif ($post_slug == 'about-us') {
-                get_template_part( 'under-construction' );
-//                get_template_part( 'content-about-us' );
+//                get_template_part( 'under-construction' );
+                get_template_part( 'content-about-us' );
             } elseif ($post_slug == 'contact-us') {
-                get_template_part( 'under-construction' );
-//                get_template_part( 'content-contact-us' );
+//                get_template_part( 'under-construction' );
+                get_template_part( 'content-contact-us' );
             } else {
                 ?>
 

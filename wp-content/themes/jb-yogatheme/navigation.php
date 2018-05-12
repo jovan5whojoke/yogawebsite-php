@@ -15,7 +15,7 @@ $post_slug = $post->post_name;
     <nav class="navbar navbar-inverse navbar-fixed-top jb-header-navigation">
         <div class="container-fluid jb-header-container">
             <div class="navbar-header">
-                <button type="button" class="collapsed navbar-toggle jb-hamburger-button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9" aria-expanded="false">
+                <button type="button" class="navbar-toggle jb-hamburger-button collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
