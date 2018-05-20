@@ -20,7 +20,7 @@ $argsVideoPosts = array(
 $queryVideoPosts = new WP_Query( $argsVideoPosts );
 ?>
 
-<!-- Articles -->
+<!-- Articles Text -->
 <article class="col-lg-12 col-md-12 col-sm-12 col-xs-12 jb-articles-category-wrapper">
     <div class="container jb-articles-container">
         <div class="row content">
@@ -72,7 +72,7 @@ $queryVideoPosts = new WP_Query( $argsVideoPosts );
 </article>
 
 
-<!-- Articles -->
+<!-- Articles Videos -->
 <article class="col-lg-12 col-md-12 col-sm-12 col-xs-12 jb-articles-category-wrapper">
     <div class="container jb-articles-container">
         <div class="row content">

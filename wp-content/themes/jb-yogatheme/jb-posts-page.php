@@ -1,8 +1,11 @@
 <?php
-/*
- * Template Name: JB-PostsPage
- * Template Post Type: post, page, product
- */
+$argsVideoPosts = array(
+    'post_status' => 'published',
+    'posts_per_page' => 10,
+    'orderby' => 'post_date',
+    'order' => 'DESC'
+);
+$queryVideoPosts = new WP_Query( $argsVideoPosts );
 ?>
 
 <!DOCTYPE html>
@@ -104,47 +107,34 @@
                     </div>
 
                     <div class="jb-posts-right-column col-xs-12 col-sm-12 col-md-3">
+
                        <div class="jb-recent-posts">
                             <h3 class="jb-recent-posts-title"><span>Recent Comments</span></h3>
 
 
                             <ul id="jb-recent-posts-post">
-                                <li class="post">
-                                    <i class="glyphicon glyphicon-th-large"></i>
-                                    <span class="comment-author-link">
-                                        <a href="">Post Lorem Ipsum Title</a>
-                                    </span>
-                                </li>
-                                <li class="post">
-                                    <i class="glyphicon glyphicon-th-large"></i>
-                                    <span class="comment-author-link">
-                                        <a href="">Post Lorem Ipsum Title</a>
-                                    </span>
-                                </li>
-                                <li class="post">
-                                    <i class="glyphicon glyphicon-th-large"></i>
-                                    <span class="comment-author-link">
-                                        <a href="">Post Lorem Ipsum Title</a>
-                                    </span>
-                                </li>
-                                <li class="post">
-                                    <i class="glyphicon glyphicon-th-large"></i>
-                                    <span class="comment-author-link">
-                                        <a href="">Post Lorem Ipsum Title</a>
-                                    </span>
-                                </li>
-                                <li class="post">
-                                    <i class="glyphicon glyphicon-th-large"></i>
-                                    <span class="comment-author-link">
-                                        <a href="">Post Lorem Ipsum Title</a>
-                                    </span>
-                                </li>
-                                <li class="post">
-                                    <i class="glyphicon glyphicon-th-large"></i>
-                                    <span class="comment-author-link">
-                                        <a href="">Post Lorem Ipsum Title</a>
-                                    </span>
-                                </li>
+                               <?php
+
+                                // Check that we have query results.
+                                if ( $queryVideoPosts->have_posts() ) {
+
+                                    // Start looping over the query results.
+                                    while ( $queryVideoPosts->have_posts() ) {
+                                        $queryVideoPosts->the_post();
+
+                                        ?>
+                                        <li class="post">
+                                            <i class="glyphicon glyphicon-th-large"></i>
+                                            <span class="comment-author-link">
+                                                <a href="<?php echo esc_url( get_permalink()); ?>" title="<?php echo get_field('post_title'); ?>">
+                                                    <?php echo get_field('post_title'); ?>
+                                                </a>
+                                            </span>
+                                        </li>
+                                        <?php
+                                    }
+                                }
+                                ?>
                             </ul>
                        </div>
                     </div>
